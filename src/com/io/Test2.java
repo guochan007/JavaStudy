@@ -7,7 +7,6 @@ public class Test2 {
 	 * 写入某文件
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
 		File f=new File("d:\\ss.txt");
 //		字节输出流
@@ -25,13 +24,11 @@ public class Test2 {
 			fos.write(s.getBytes());
 			fos.write(s1.getBytes());
 		} catch (Exception e) {
-			// TODO: handle exception
 			e.printStackTrace();
 		}finally{
 			try {
 				fos.close();
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}

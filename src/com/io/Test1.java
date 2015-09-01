@@ -9,7 +9,6 @@ public class Test1 {
 	 * 读取某文件里的数据
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 //		得到一个文件对象
 		File f=new File("d:\\aa.txt");
 //		System.out.println(f.length());
@@ -29,14 +28,12 @@ public class Test1 {
 			}
 			
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally{
 //			关闭文件流
 			try {
 				fis.close();
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
