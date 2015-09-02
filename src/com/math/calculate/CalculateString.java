@@ -22,10 +22,11 @@ public class CalculateString {
 	 */
 	public static void main(String[] args) {
 //		t1();
-		t2();
+//		t2();
 //		t3();
-		t4();
-		t5();
+//		t4();
+//		t5();
+		test();
 	}
 	
 	private static void t1(){
@@ -87,6 +88,15 @@ public class CalculateString {
 		JexlContext context = new MapContext();
 		Number res = (Number)e.evaluate(context);
 		System.out.println(res);
+	}
+	
+	private static void test(){
+		String str="6726.9-1907.2-650-2650.73";
+		JexlEngine jexl = new JexlEngine();
+		Expression e =jexl.createExpression(str);
+		JexlContext context = new MapContext();
+		Number res = (Number)e.evaluate(context);
+		System.out.println(res);//1518.9699999999998  结果正确
 	}
 }
 
