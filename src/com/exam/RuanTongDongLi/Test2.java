@@ -7,5 +7,6 @@ public class Test2 {
 
 	public String method(int i, String s) {
 		// do something
+		return null;
 	}
 }

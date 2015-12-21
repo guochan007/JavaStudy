@@ -196,9 +196,9 @@ public final class DateUtil {
      *            日期格式
      * @return
      */
-    public static String formatLunar(Date date) {
-        return new Lunar(date).toString();
-    }
+//    public static String formatLunar(Date date) {
+//        return new Lunar(date).toString();
+//    }
  
     /**
      * 取得当前日期
